@@ -7,8 +7,10 @@
 
         <class>entity.ItemsEntity</class>
         <properties>
+            <!-- DB URL -->
             <property name="hibernate.connection.url" value="jdbc:mysql://127.0.0.1:3306/todo?user=root"/>
             <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <!-- Credentials for DB -->
             <property name="hibernate.connection.username" value="root"/>
             <property name="hibernate.connection.password" value="password"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>

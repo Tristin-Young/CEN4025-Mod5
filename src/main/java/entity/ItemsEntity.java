@@ -1,12 +1,12 @@
 package entity;
 
 import javax.persistence.*;
-
+//item entity to connect to backend DB
 @Entity
 @Table(name = "items", schema = "todo")
 public class ItemsEntity {
+    //creating private variables for item entity
     @Id
-    //s@GeneratedValue(strategy = GenerationType.IDENTITY) // Let Hibernate generate unique IDs
     @Column(name = "itemID")
     private int itemId;
 
@@ -19,6 +19,7 @@ public class ItemsEntity {
     @Column(name = "isDone")
     private byte isDone;
 
+    //getter and setter methods for item entity
     @Id
     @Column(name = "itemID")
     public int getItemId() {
